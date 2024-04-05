@@ -1,0 +1,59 @@
+.app-add-form {
+    margin-top: 30px;
+    padding: 25px;
+    padding-bottom: 0;
+    background-color: #206c29;
+    border-radius: 1em;
+    box-shadow: 15px 15px 30px rgba(0,0,0, .80);
+    color: #fff;
+}
+
+.add-form {
+    margin-top: 20px;
+
+}
+
+.add-form input {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+}
+
+input:invalid{
+    position: relative;
+    display: block;
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input[name='name']:invalid + .btn:hover{
+    background-color: red !important; 
+}
+
+input[name='name']:invalid + .error-msg-name{
+    visibility: visible;
+}
+
+input[name='wage']:invalid + .error-msg-wage{
+    visibility: visible;
+}
+
+.error-msg-name,
+.error-msg-wage{
+    height: 25px;
+    margin-bottom: 0.5em;
+    visibility: hidden;
+    color: red;
+    right: 0;
+}
+
+button{
+    height: fit-content;
+}
